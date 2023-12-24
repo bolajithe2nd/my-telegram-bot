@@ -8,9 +8,9 @@ import WebApp from "@twa-dev/sdk";
 function App() {
   const [count, setCount] = useState(0);
 
-  const testFunction = () => {
-    console.log(WebApp.initData);
-  };
+  // const testFunction = () => {
+  //   console.log(WebApp.initData);
+  // };
 
   return (
     <>
