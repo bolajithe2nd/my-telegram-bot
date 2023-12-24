@@ -22,7 +22,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>TWA + Vite + Lanresss</h1>
+      <h1>Telegram Web App</h1>
       <div className="card">
         <button
           className="secondary"
