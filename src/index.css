@@ -40,6 +40,7 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #FFD75B;
+  color: var(--tg-theme-button-text-color);
   cursor: pointer;
   transition: border-color 0.25s;
 
@@ -51,6 +52,10 @@ button {
       border-color: #FFD75B;
     }
   }
+}
+
+p {
+  color: var(--tg-theme-hint-color);
 }
 
 

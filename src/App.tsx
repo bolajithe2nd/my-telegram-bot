@@ -23,6 +23,7 @@ function App() {
         </a>
       </div>
       <h1>Telegram Web App</h1>
+      <p>This is a test for my telegram web application.</p>
       <div className="card">
         <button
           className="secondary"
