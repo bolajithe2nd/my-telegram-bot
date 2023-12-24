@@ -40,7 +40,8 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #FFD75B;
-  color: var(--tg-theme-button-text-color);
+  color: #0D0000;
+  /* color: var(--tg-theme-button-text-color); */
   cursor: pointer;
   transition: border-color 0.25s;
 
