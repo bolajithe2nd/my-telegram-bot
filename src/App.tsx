@@ -1,12 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
 
-import WebApp from '@twa-dev/sdk'
+import WebApp from "@twa-dev/sdk";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+  const testFunction = () => {
+    console.log(WebApp.initData);
+  };
 
   return (
     <>
@@ -20,18 +24,22 @@ function App() {
       </div>
       <h1>TWA + Vite + Lanresss</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button
+          className="secondary"
+          onClick={() => setCount((count) => count + 1)}
+        >
           count is {count}
         </button>
-      </div>
-      {/*  */}
-      <div className="card">
-        <button onClick={() => WebApp.showAlert(`Hello World! Current count is ${count}`)}>
-            Show Alert
+        <button
+          onClick={() =>
+            WebApp.showAlert(`Hello World! Current count is ${count}`)
+          }
+        >
+          Show Alert
         </button>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
