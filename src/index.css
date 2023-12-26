@@ -1,14 +1,39 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   font-weight: 400;
-
-  color-scheme: var(--tg-color-scheme);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  /* Telegram colors */
+    color-scheme: var(--tg-color-scheme);
+    --separator-color: #c8c7cb;
+    --highlight-default: rgb(142 142 146 / 24%);
+  
+    /* Main Color */
+    --button-secondary-color: #f2f2f2;
+}
+
+@media(prefers-color-scheme: dark) {
+  :root {
+    --button-secondary-color: #3D402F;
+  }
+}
+
+[data-color-scheme='light'] {
+  /* Telegram colors */
+  --separator-color: #c8c7cb;
+  --highlight-default: rgb(142 142 146 / 24%);
+
+  /* Main Color */
+  --button-secondary-color: #f2f2f2;
+}
+
+[data-color-scheme='dark'] {
+  --button-secondary-color: #3D402F;
+
 }
 
 a {
@@ -18,7 +43,7 @@ a {
 }
 
 body {
-  background-color: var(--tg-theme-bg-color);
+  background-color: var(--tg-theme-secondary-bg-color);
   color: var(--tg-theme-text-color);
   margin: 0;
   display: flex;
@@ -46,7 +71,7 @@ button {
   transition: border-color 0.25s;
 
   &.secondary {
-    background-color: #3D402F;
+    background-color: var(--button-secondary-color);
     color: #FFD75B;
 
     &:hover {
@@ -59,23 +84,7 @@ p {
   color: var(--tg-theme-hint-color);
 }
 
-
 /* button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-} */
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
 } */
